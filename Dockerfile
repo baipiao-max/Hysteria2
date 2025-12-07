@@ -2,7 +2,7 @@
 FROM alpine:latest
 
 # 设置环境变量默认值（可在 docker run 时覆盖）
-ENV SERVER_DOMAIN=ServerIP
+ENV SERVER_DOMAIN=server-ip
 ENV UDP_PORT=1235
 ENV PASSWORD=main
 
@@ -30,6 +30,7 @@ EXPOSE ${UDP_PORT}/udp
 
 # 启动脚本作为容器入口
 ENTRYPOINT ["/hysteria.sh"]
+
 
 
 
