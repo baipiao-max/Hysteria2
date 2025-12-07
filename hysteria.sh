@@ -33,7 +33,7 @@ echo "监听端口（UDP）：${UDP_PORT}"
 echo "密码：${PASSWORD}"
 echo "------------------------------------------------------------------------"
 echo "🎯 客户端连接配置（请将端口替换为爪云分配的外网 UDP 端口）："
-echo "hy2://${PASSWORD}@${SERVER_DOMAIN}:${UDP_PORT}?sni=bing.com&insecure=1#claw.cloud-hy2-${COUNTRY_CODE}"
+echo "hy2://${PASSWORD}@${SERVER_DOMAIN}:${UDP_PORT}?sni=bing.com&insecure=1#${COUNTRY_CODE}"
 echo "------------------------------------------------------------------------"
 
 wait
