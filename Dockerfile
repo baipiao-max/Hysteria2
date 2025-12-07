@@ -12,7 +12,7 @@ RUN apk update && \
     mkdir -p /etc/hysteria
 
 # 下载 hysteria2 主程序
-RUN wget -q -O /usr/local/bin/hysteria https://download.hysteria.network/app/latest/hysteria-linux-amd64 && \
+RUN wget -q -O /usr/local/bin/hysteria https://github.com/apernet/hysteria/releases/download/app%2Fv2.6.5/hysteria-linux-amd64 && \
     chmod +x /usr/local/bin/hysteria
 
 # 自签 TLS 证书
@@ -30,4 +30,5 @@ EXPOSE ${UDP_PORT}/udp
 
 # 启动脚本作为容器入口
 ENTRYPOINT ["/hysteria.sh"]
+
 
