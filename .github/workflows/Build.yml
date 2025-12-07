@@ -12,9 +12,9 @@ jobs:
 
     name: "Build image"
     env:
-      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}  # Docker Hub 用户名
-      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}  # Docker Hub 密码
-      DOCKER_REPO: ${{ secrets.DOCKER_REPO }}  # Docker Hub 仓库名(示例:claw-hy2-agent)
+      DOCKER_USERNAME: ${{ secrets.freebaipiao }}  # Docker Hub 用户名
+      DOCKER_PASSWORD: ${{ secrets.yzg994... }}  # Docker Hub 密码
+      DOCKER_REPO: ${{ secrets.hy2 }}  # Docker Hub 仓库名(示例:claw-hy2-agent)
       DOCKERHUB_REPOSITORY: ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_REPO }}:latest  # 构造标签
 
     steps:
