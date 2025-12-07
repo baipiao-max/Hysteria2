@@ -22,7 +22,7 @@ RUN openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) \
     -subj "/CN=bing.com" -days 36500
 
 # 拷贝 entrypoint 启动脚本
-COPY entrypoint.sh /hysteria.sh
+COPY hysteria.sh /hysteria.sh
 RUN chmod +x /hysteria.sh
 
 # 显示 UDP 端口（作为示例，实际暴露端口由 docker run -p 控制）
@@ -30,5 +30,6 @@ EXPOSE ${UDP_PORT}/udp
 
 # 启动脚本作为容器入口
 ENTRYPOINT ["/hysteria.sh"]
+
 
 
